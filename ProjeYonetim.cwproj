@@ -35,6 +35,9 @@
     <Compile Include="cwsynchc.clw">
       <Generated>true</Generated>
     </Compile>
+    <Compile Include="EFOCUS.CLW">
+      <Generated>true</Generated>
+    </Compile>
     <Compile Include="ProjeYonetim.clw">
       <Generated>true</Generated>
     </Compile>
@@ -55,9 +58,11 @@
     <Library Include="CheckOn.ICO" />
     <Library Include="CheckOnDim.ICO" />
     <Library Include="CLAEZHL.Lib" />
-    <Library Include="EXL9XL.LIB" />
+    <Library Include="EXL10XL.LIB" />
     <Library Include="ProjeYonetim.EXE.manifest" />
     <Library Include="ProjeYonetim.Version" />
+    <Library Include="WASelect.ico" />
+    <Library Include="WIZLAST.ICO" />
   </ItemGroup>
   <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
 </Project>

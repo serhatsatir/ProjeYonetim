@@ -1,0 +1,63 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{26CAF7DC-C3A0-451A-8B11-A58ED08C8C59}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Win32</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjeYonetim</RootNamespace>
+    <AssemblyName>ProjeYonetim</AssemblyName>
+    <OutputName>ProjeYonetim</OutputName>
+    <CWOutputType>Exe</CWOutputType>
+    <DefineConstants>_CCLSDllMode_=&gt;0%3b_CCLSLinkMode_=&gt;1%3b_ABCDllMode_=&gt;0%3b_ABCLinkMode_=&gt;1</DefineConstants>
+    <Model>Lib</Model>
+    <ApplicationIcon>clarion.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <vid>full</vid>
+    <check_stack>True</check_stack>
+    <check_index>True</check_index>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <vid>off</vid>
+    <check_stack>False</check_stack>
+    <check_index>False</check_index>
+  </PropertyGroup>
+  <ItemGroup>
+    <FileDriver Include="ASCII" />
+    <FileDriver Include="DOS" />
+    <FileDriver Include="MSSQL" />
+    <FileDriver Include="SQLite" />
+    <FileDriver Include="TOPSPEED" />
+    <Compile Include="cwsynchc.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="ProjeYonetim.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="ProjeYonetim001.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="ProjeYonetim002.clw">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="PROJEYONETIM_BC.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Compile Include="ProjeYonetim_BC0.CLW">
+      <Generated>true</Generated>
+    </Compile>
+    <Library Include="CheckOff.ICO" />
+    <Library Include="CheckOffDim.ICO" />
+    <Library Include="CheckOn.ICO" />
+    <Library Include="CheckOnDim.ICO" />
+    <Library Include="CLAEZHL.Lib" />
+    <Library Include="EXL9XL.LIB" />
+    <Library Include="ProjeYonetim.EXE.manifest" />
+    <Library Include="ProjeYonetim.Version" />
+  </ItemGroup>
+  <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
+</Project>

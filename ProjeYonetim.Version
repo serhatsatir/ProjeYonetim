@@ -1,0 +1,32 @@
+LANGUAGE 0x041F
+
+1 VERSIONINFO
+ FILEVERSION 9,1,0,427
+ PRODUCTVERSION 9,1,0,427
+ FILEFLAGSMASK 0x3FL
+ FILEFLAGS 0
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE 0x0L
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "041F04E6"
+      BEGIN
+        VALUE "CompanyName", "Delta Yazilim\0"
+        VALUE "FileDescription", "Proje Finansman Yönetimi\0"
+        VALUE "FileVersion", "9.1.0.427\0"
+        VALUE "LegalCopyright", "Copyright (c) 2009\0"
+        VALUE "LegalTrademarks", "Trademark\0"
+        VALUE "OriginalFilename", "ProjeYonetim.EXE\0"
+        VALUE "ProductVersion", "9.1.0.427\0"
+        VALUE "Clarion Version", "9100\0"
+        VALUE "Template Family", "ABC\0"
+        VALUE "Template Version", "v9.0\0"
+      END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x041F, 1254
+    END
+END
